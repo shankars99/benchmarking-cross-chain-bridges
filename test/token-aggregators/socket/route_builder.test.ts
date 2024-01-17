@@ -48,7 +48,7 @@ describe('Socket:Router', () => {
 
             build_route(fromChain, toChain, fromToken, toToken, amount, !multiTx).then((route: SocketQuote) => {
                 expect(route.route.routeId).to.not.equal(undefined);
-                fs.writeFileSync('run-data/token-routes/socket-route-same-chain-multiTx.json', JSON.stringify(route));
+                fs.writeFileSync('run-data/token-routes/socket-route-same-chain-singleTx.json', JSON.stringify(route));
                 done();
             }
             ).catch((error) => {
