@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 22})
 from utils import create_plot_dir
 import matplotlib
 matplotlib.use('Agg')
@@ -40,15 +41,12 @@ def plot_net_fee_vs_gas_price(timestamps, gas_prices_source, gas_prices_dest, to
         # Create a tertiary y-axis for Gas Prices on Destination Chain
         ax3 = ax1.twinx()
         ax3.spines['right'].set_position(('outward', 60))
-        ax3.plot(timestamps, gas_prices_dest, label=f'Gas Price ({dest_chain.lower()})', linestyle='--', color='black')
+        ax3.plot(timestamps, gas_prices_dest, label=f'Gas Price ({dest_chain.lower()},)', linestyle='--', color='black')
         ax3.set_ylabel(f'Gas Price ({dest_chain.lower()})', color='black')
-        ax3.tick_params('y', colors='black')
+        ax3.tick_params('y', colors='black', )
 
-    # Update layout
-    if source_chain == dest_chain:
-        plt.title(f'Total Fee (USD) vs. Gas Prices (USD)\nSource Chain: {source_chain}, Aggregator: {aggregator}')
-    else:
-        plt.title(f'Total Fee (USD) vs. Gas Prices (USD)\nSource Chain: {source_chain}, Dest Chain: {dest_chain}, Aggregator: {aggregator}')
+
+    plt.title(f'Total Fee (USD) vs. Gas Prices (USD)\n{source_chain} => {dest_chain}, Aggregator: {aggregator}')
 
     # Set plot directory and filename
     plot_dir = 'benchmark-plots/net_fee_vs_gas_price'

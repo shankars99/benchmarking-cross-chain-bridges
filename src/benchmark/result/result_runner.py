@@ -1,6 +1,7 @@
 import os
 import argparse
 import matplotlib
+matplotlib.rcParams.update({'font.size': 22})
 matplotlib.use('Agg')
 
 from data_loader import load_json_data, save_obj

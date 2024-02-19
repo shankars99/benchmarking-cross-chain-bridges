@@ -1,5 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
+plt.rcParams.update({'font.size': 22})
 import matplotlib
 matplotlib.use('Agg')
 
@@ -35,7 +36,7 @@ def plot_quote_difference(timestamps, coin_gecko_prices, actual_values, aggregat
     ax.set_ylim(-150, 50)
 
     # Update layout
-    ax.set_title(f'Difference in Quotes\nSource Chain: {source_chain}, Dest Chain: {dest_chain}, Aggregator: {aggregator}')
+    ax.set_title(f'Difference in Quotes\n{source_chain} => {dest_chain}, Aggregator: {aggregator}')
     ax.set_xlabel('Timestamp')
     ax.set_ylabel('Difference')
     ax.legend()
