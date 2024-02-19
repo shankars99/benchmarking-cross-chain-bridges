@@ -10,7 +10,7 @@ pragma solidity ^0.8.13;
 
 import {Script} from "forge-std/Script.sol";
 import {console2} from "forge-std/console2.sol";
-import {Hyperlane_Counter} from "@benchmarking-cross-chain-bridges/Hyperlane/Counter.sol";
+import {Hyperlane_Counter} from "@benchmarking-bridge-aggregators/Hyperlane/Counter.sol";
 import {HelperScript} from "../Helper/Helper.s.sol";
 
 contract CounterIGPGasScript is Script {

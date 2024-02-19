@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { APIReport } from '@benchmarking-cross-chain-bridges/benchmark/types/APIReport';
-import { make_api_report } from '@benchmarking-cross-chain-bridges/benchmark/report-gen/token-aggregators/cowswap';
+import { APIReport } from '@benchmarking-bridge-aggregators/benchmark/types/APIReport';
+import { make_api_report } from '@benchmarking-bridge-aggregators/benchmark/report-gen/token-aggregators/cowswap';
 
 describe('Benchmarking Cowswap', () => {
 

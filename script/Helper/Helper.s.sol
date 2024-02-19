@@ -22,7 +22,7 @@ contract HelperScript is Script {
 
     constructor(string memory _protocolName, bool _isTest) {
         contract_address_json = string.concat(
-            "/src/message-aggregators/",
+            "/src/plugins/message-aggregators/",
             _protocolName,
             "/deployed_addresses.json"
         );
@@ -68,7 +68,7 @@ contract HelperScript is Script {
 
     function get_deployed_address(
         string memory _contract_name
-    ) public returns (address) {
+    ) public view returns (address) {
         string memory json = vm.readFile(path_contract_address);
 
         address deployed_address = json.readAddress(

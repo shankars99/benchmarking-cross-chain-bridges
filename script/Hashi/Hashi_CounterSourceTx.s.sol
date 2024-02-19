@@ -10,7 +10,7 @@ import {Script} from "forge-std/Script.sol";
 import {console2} from "forge-std/console2.sol";
 
 import {HelperScript} from "../Helper/Helper.s.sol";
-import {Hashi_Counter} from "@benchmarking-cross-chain-bridges/Hashi/Counter.sol";
+import {Hashi_Counter} from "@benchmarking-bridge-aggregators/Hashi/Counter.sol";
 import {Yaho} from "@hashi/Yaho.sol";
 import {Message} from "@hashi/interfaces/IMessage.sol";
 

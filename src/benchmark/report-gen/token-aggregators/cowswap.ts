@@ -1,9 +1,9 @@
-import { create_api_report, create_report_network, get_coin_gecko_price, report_count, scale_two_decimals } from '@benchmarking-cross-chain-bridges/benchmark/report-gen/helper';
-import { APIReport, Network, Aggregator, Asset, Fee, Latency } from '@benchmarking-cross-chain-bridges/benchmark/types/APIReport';
-import { CHAIN_ID_MAP, TOKEN_MAP } from '@benchmarking-cross-chain-bridges/helper/constants_global';
+import { create_api_report, create_report_network, get_coin_gecko_price, report_count, scale_two_decimals } from '@benchmarking-bridge-aggregators/benchmark/report-gen/helper';
+import { APIReport, Network, Aggregator, Asset, Fee, Latency } from '@benchmarking-bridge-aggregators/benchmark/types/APIReport';
+import { CHAIN_ID_MAP, TOKEN_MAP } from '@aggregator-utils/constants_global';
 import { Order } from '@gnosis.pm/gp-v2-contracts';
-import { COWOrderRequest, COWQuote, COWReturn } from '@benchmarking-cross-chain-bridges/token-aggregators/cowswap/types';
-import { build_route } from '@benchmarking-cross-chain-bridges/token-aggregators/cowswap/route_builder';
+import { COWOrderRequest, COWQuote, COWReturn } from '@benchmarking-bridge-aggregators/plugins/token-aggregators/cowswap/types';
+import { build_route } from '@benchmarking-bridge-aggregators/plugins/token-aggregators/cowswap/route_builder';
 
 /**
  * Generates a report for the COWSwap token aggregator.

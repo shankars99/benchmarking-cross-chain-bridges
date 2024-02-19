@@ -15,7 +15,7 @@ import {IAMB} from "@hashi/adapters/AMB/IAMB.sol";
 import {AMBAdapter} from "@hashi/adapters/AMB/AMBAdapter.sol";
 import {HelperScript} from "../Helper/Helper.s.sol";
 
-import {Hashi_Counter} from "@benchmarking-cross-chain-bridges/Hashi/Counter.sol";
+import {Hashi_Counter} from "@benchmarking-bridge-aggregators/Hashi/Counter.sol";
 
 contract DeployYaruScript is Script {
     Yaru public yaru;

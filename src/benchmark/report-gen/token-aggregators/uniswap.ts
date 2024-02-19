@@ -1,7 +1,7 @@
-import { create_api_report, create_report_network, get_token_price, scale_two_decimals } from '@benchmarking-cross-chain-bridges/benchmark/report-gen/helper';
-import { APIReport, Network, Aggregator, Asset, Fee, Latency } from '@benchmarking-cross-chain-bridges/benchmark/types/APIReport';
-import { CHAIN_ID_MAP, TOKEN_MAP } from '@benchmarking-cross-chain-bridges/helper/constants_global';
-import { build_route } from '@benchmarking-cross-chain-bridges/token-aggregators/uniswap/route_builder';
+import { create_api_report, create_report_network, get_token_price, scale_two_decimals } from '@benchmarking-bridge-aggregators/benchmark/report-gen/helper';
+import { APIReport, Network, Aggregator, Asset, Fee, Latency } from '@benchmarking-bridge-aggregators/benchmark/types/APIReport';
+import { CHAIN_ID_MAP, TOKEN_MAP } from '@aggregator-utils/constants_global';
+import { build_route } from '@benchmarking-bridge-aggregators/plugins/token-aggregators/uniswap/route_builder';
 import { SwapRoute } from '@uniswap/smart-order-router';
 
 /**

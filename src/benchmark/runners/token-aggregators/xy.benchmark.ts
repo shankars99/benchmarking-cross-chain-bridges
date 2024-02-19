@@ -1,7 +1,7 @@
 import { expect } from 'chai';
 
-import { APIReport } from '@benchmarking-cross-chain-bridges/benchmark/types/APIReport';
-import { make_api_report } from '@benchmarking-cross-chain-bridges/benchmark/report-gen/token-aggregators/xy';
+import { APIReport } from '@benchmarking-bridge-aggregators/benchmark/types/APIReport';
+import { make_api_report } from '@benchmarking-bridge-aggregators/benchmark/report-gen/token-aggregators/xy';
 
 describe('Benchmarking XY (get_token_price() may error if the coingecko pair is not correct)', () => {
     describe('should create reports for MAINNET ETHEREUM -> ETHEREUM trades', () => {

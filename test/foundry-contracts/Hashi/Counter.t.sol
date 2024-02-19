@@ -2,7 +2,7 @@
 pragma solidity ^0.8.13;
 
 import {Test, console2} from "forge-std/Test.sol";
-import {Hashi_Counter} from "@benchmarking-cross-chain-bridges/Hashi/Counter.sol";
+import {Hashi_Counter} from "@benchmarking-bridge-aggregators/Hashi/Counter.sol";
 
 /// @title HashiCounterTest
 /// @dev A contract for testing the Hashi_Counter contract

@@ -5,7 +5,7 @@ import {Script} from "forge-std/Script.sol";
 import {console2} from "forge-std/console2.sol";
 
 import {LinkTokenInterface} from "@chainlink/contracts/src/v0.8/shared/interfaces/LinkTokenInterface.sol";
-import {CCIP_Sender} from "@benchmarking-cross-chain-bridges/CCIP/SourceContract.sol";
+import {CCIP_Sender} from "@benchmarking-bridge-aggregators/CCIP/SourceContract.sol";
 import {HelperScript} from "../Helper/Helper.s.sol";
 
 contract SourceTxFeeLINKScript is Script {

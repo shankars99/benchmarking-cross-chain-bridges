@@ -3,7 +3,7 @@ pragma solidity ^0.8.13;
 
 import {Test, console2} from "forge-std/Test.sol";
 import {StdCheats} from "forge-std/StdCheats.sol";
-import {CCIP_Counter} from "@benchmarking-cross-chain-bridges/CCIP/Counter.sol";
+import {CCIP_Counter} from "@benchmarking-bridge-aggregators/CCIP/Counter.sol";
 import {Client} from "@chainlink/contracts-ccip/src/v0.8/ccip/libraries/Client.sol";
 
 /// @title CCIPCounterTest

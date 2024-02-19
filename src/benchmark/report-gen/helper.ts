@@ -2,8 +2,8 @@ import fs from 'fs';
 import axios from 'axios';
 import { APIReport, Asset, CoinGeckoPrice, Fee, Latency, Network } from '../types/APIReport';
 import { Aggregator } from '../types/APIReport';
-import { CHAIN_MAP, TOKEN_MAP } from '@benchmarking-cross-chain-bridges/helper/constants_global';
-import { get_gas_price, get_latest_blockNum } from '@benchmarking-cross-chain-bridges/helper/provider';
+import { CHAIN_MAP, TOKEN_MAP } from '@aggregator-utils/constants_global';
+import { get_gas_price, get_latest_blockNum } from '@aggregator-utils/provider';
 
 const report_dir = 'benchmark-data';
 

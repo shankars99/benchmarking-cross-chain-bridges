@@ -7,7 +7,7 @@
 pragma solidity ^0.8.13;
 
 import {Test, console2} from "forge-std/Test.sol";
-import {CCIP_Sender} from "@benchmarking-cross-chain-bridges/CCIP/SourceContract.sol";
+import {CCIP_Sender} from "@benchmarking-bridge-aggregators/CCIP/SourceContract.sol";
 
 contract SourceContractTest is Test {
     CCIP_Sender public deployed_ccip_sender;
